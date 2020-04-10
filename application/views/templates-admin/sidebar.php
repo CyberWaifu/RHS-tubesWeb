@@ -19,7 +19,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="<?php echo base_url('index.php/admin/dashboard_admin') ?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -27,13 +27,13 @@
       
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url('index.php/admin/data_barang') ?>">
           <i class="fas fa-database"></i>
           <span>Data Barang</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url('index.php/admin/invoice') ?>">
           <i class="fas fa-fw fa-file-invoice"></i>
           <span>Invoices</span></a>
       </li>
@@ -46,7 +46,7 @@
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
-
+s
     </ul>
     <!-- End of Sidebar -->
 
