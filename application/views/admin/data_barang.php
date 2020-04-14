@@ -23,7 +23,7 @@
                 <td><?php echo $brg->kategori ?></td>
                 <td><?php echo $brg->harga ?></td>
                 <td><?php echo $brg->stok ?></td>
-                <td><div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div></td>
+                <td><?php echo anchor('admin/dashboard_admin/detail/' .$brg->id_barang,'<div class="btn btn-sm btn-success"><i class="fas fa-search-plus"></i></div>') ?></td>
                 <td><?php echo anchor('admin/data_barang/edit/' .$brg->id_barang,'<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>')?></td>
                 <td><?php echo anchor('admin/data_barang/hapus/' .$brg->id_barang,'<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>') ?></td>
             </tr>
