@@ -28,8 +28,8 @@ class Model_invoice extends CI_Model{
                 'harga' => $item['price'],
             );
             $this->db->insert('tb_pesanan',$data);
-            return TRUE;
         }
+        return TRUE;
     }
 
     public function tampil_data(){
