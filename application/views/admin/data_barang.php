@@ -58,7 +58,12 @@
 
             <div class="form group">
                 <label>Kategori</label>
-                <input type="text" name="kategori" class="form-control">
+                <select class="form-control" name='kategori'> 
+                  <option>Alat kesehatan</option>
+                  <option>Minuman</option>
+                  <option>Obat</option>
+                  <option>Vitamin</option>
+                </select>
             </div>
 
             <div class="form group">

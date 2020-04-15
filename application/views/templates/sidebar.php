@@ -34,25 +34,25 @@
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url('index.php/kategori/obat') ?>">
           <i class="fas fa-pills"></i>
           <span>Obat</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url('index.php/kategori/alatkesehatan') ?>">
           <i class="fab fa-accessible-icon"></i>
           <span>Alat kesehatan</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url('index.php/kategori/vitamin') ?>">
           <i class="fas fa-tablets"></i>
           <span>Vitamin</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url('index.php/kategori/minuman') ?>">
           <i class="fas fa-wine-bottle"></i>
           <span>Minuman</span></a>
       </li>
