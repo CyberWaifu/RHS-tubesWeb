@@ -22,6 +22,7 @@
         </tr>
 
         <?php endforeach; ?>
+        <a class="btn btn-sm btn-warning mt-2 mb-2" href="<?php echo base_url('index.php/admin/invoice/print') ?>"><i class="fas fa-print mr-2"></i> Print</a>
 
         
 

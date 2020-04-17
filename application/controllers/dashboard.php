@@ -16,10 +16,9 @@ class Dashboard extends CI_controller{
     }
     
     public function index(){
-        $data['barang'] = $this->model_barang->tampil_data()->result();
         $this->load->view('templates/header');
         $this->load->view('templates/sidebar');
-        $this->load->view('pages/dashboard', $data);
+        $this->load->view('pages/mainmenu');
         $this->load->view('templates/footer');
     }
 
@@ -74,6 +73,14 @@ class Dashboard extends CI_controller{
         $this->load->view('templates/header');
         $this->load->view('templates/sidebar');
         $this->load->view('pages/detail_barang',$data);
+        $this->load->view('templates/footer');
+    }
+
+    public function semua(){
+        $data['barang'] = $this->model_barang->tampil_data()->result();
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('pages/dashboard', $data);
         $this->load->view('templates/footer');
     }
         

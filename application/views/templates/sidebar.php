@@ -20,36 +20,37 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="<?php echo base_url('index.php/dashboard/index') ?>">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+        <i class="fas fa-home"></i>
+          <span>HOME</span></a>
       </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
 
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Kategori
-      </div>
-
-      <!-- Nav Item - Tables -->
+      <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('index.php/kategori/obat') ?>">
-          <i class="fas fa-pills"></i>
-          <span>Obat</span></a>
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-briefcase-medical"></i>
+          <span>Apotek Online</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Kategori:</h6>
+            <a class="collapse-item" href="<?php echo base_url('index.php/dashboard/semua') ?>">Semua</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/kategori/alatkesehatan') ?>"><i class="fab fa-accessible-icon mr-2"></i>Alat Kesehatan</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/kategori/obat') ?>"> <i class="fas fa-pills mr-2"></i>Obat</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/kategori/minuman') ?>"><i class="fas fa-wine-bottle mr-2"></i>Minuman</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/kategori/vitamin') ?>"><i class="fas fa-tablets mr-2"></i>Vitamin</a>
+            
+            
+            
+
+          </div>
+        </div>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('index.php/kategori/alatkesehatan') ?>">
-          <i class="fab fa-accessible-icon"></i>
-          <span>Alat kesehatan</span></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('index.php/kategori/vitamin') ?>">
-          <i class="fas fa-tablets"></i>
-          <span>Vitamin</span></a>
-      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
 
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('index.php/kategori/minuman') ?>">
@@ -82,17 +83,7 @@
             <i class="fa fa-bars"></i>
           </button>
 
-          <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
+          
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -120,24 +111,30 @@
             <div class="navbar">
               <ul class="nav navbar-nav navbar-right">
                 <li>
+                <div class="btn btn-sm btn-outline-primary ml-2">
+                  <i class="fas fa-cart-plus"></i>
                   <?php $keranjang = 'keranjang Belanja: ' .$this->cart->total_items 
                   (). ' items' ?>
 
                   <?php echo anchor('dashboard/detail_keranjang',$keranjang )  ?>
+                </div>
                 </li>
               </ul>
               
               <div class="topbar-divider d-none d-sm-block"></div>
               
               <ul class="na navbar-nav navbar-right">
+                
                   <?php if($this->session->userdata('username')) { ?>
-                    <li><div>Selamat datang <?php echo $this->session->userdata(
-                      'username') ?></div></li>
-                    <li class="ml-2"><?php echo anchor('auth/logout','Logout') ?></li>
+                    <div class="btn btn-sm btn-outline-primary ml-2"><li><div class="text-uppercase"><i class="fas fa-user mr-2"></i><?php echo $this->session->userdata(
+                      'username') ?></div></li></div>
+                    <div class="btn btn-sm btn-outline-primary ml-2"><li class="ml-2"><?php echo anchor('auth/logout','Logout') ?></li></div>
                   <?php } else { ?>
                     <li><?php echo anchor('auth/login','Login'); ?></li>
                   <?php } ?>
+                
               </ul>
+
            </div>
 
            

@@ -32,4 +32,12 @@ class Invoice extends CI_Controller{
         $this->load->view('templates-admin/footer');
     }
 
+    public function print(){
+        $data['invoice'] = $this->model_invoice->tampil_data();
+        $this->load->view('templates-admin/header');
+        $this->load->view('templates-admin/sidebar');
+        $this->load->view('admin/print_invoice',$data);
+        $this->load->view('templates-admin/footer');
+    }
+
 }
