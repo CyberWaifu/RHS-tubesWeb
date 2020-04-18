@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Agency - Start Bootstrap Theme</title>
+  <title>Dr Ramdan Hospital Service</title>
 
   <!-- Bootstrap core CSS -->
   <link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Login</a>
+            <a class="nav-link js-scroll-trigger" href="<?php echo base_url('index.php/auth/login') ?>">Login</a>
           </li>
         </ul>
       </div>
@@ -69,7 +69,7 @@
       <div class="intro-text">
         <div class="intro-lead-in" style="color: gold;">Layanan Kesehatan Terpadu Berbasis WEB</div>
         <div class="intro-heading text-uppercase" style="color:white">Dr Ramdan Hospital Service</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Register</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="<?php echo base_url('index.php/registrasi/index') ?>">Register</a>
       </div>
     </div>
   </header>
@@ -478,16 +478,6 @@
               <a href="#">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
             </li>
           </ul>
         </div>

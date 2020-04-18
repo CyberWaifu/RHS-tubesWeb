@@ -14,12 +14,16 @@ class Dashboard extends CI_controller{
           redirect('auth/login');
         }
     }
-    
-    public function index(){
+
+    public function home(){
         $this->load->view('templates/header');
         $this->load->view('templates/sidebar');
         $this->load->view('pages/mainmenu');
         $this->load->view('templates/footer');
+    }
+    
+    public function index(){   
+        $this->load->view('pages/landingpages');
     }
 
     public function tambah_ke_keranjang($id){
@@ -33,7 +37,7 @@ class Dashboard extends CI_controller{
         );
         
         $this->cart->insert($data);
-        redirect('dashboard');
+        redirect('dashboard/semua');
     }
 
     public function detail_keranjang(){
