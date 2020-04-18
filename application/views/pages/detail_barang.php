@@ -41,7 +41,7 @@
                 </table>
                 
                 <?php echo anchor('dashboard/tambah_ke_keranjang/' .$brg->id_barang,'<div class="btn btn-sm btn-primary">Tambah Ke Keranjang</div>') ?>
-                <?php echo anchor('dashboard/index/','<div class="btn btn-sm btn-danger">Kembali</div>') ?>
+                <?php echo anchor('dashboard/home/','<div class="btn btn-sm btn-danger">Kembali</div>') ?>
             </div>
 
         </div>

@@ -41,14 +41,11 @@
             <a class="collapse-item" href="<?php echo base_url('index.php/kategori/obat') ?>"> <i class="fas fa-pills mr-2"></i>Obat</a>
             <a class="collapse-item" href="<?php echo base_url('index.php/kategori/minuman') ?>"><i class="fas fa-wine-bottle mr-2"></i>Minuman</a>
             <a class="collapse-item" href="<?php echo base_url('index.php/kategori/vitamin') ?>"><i class="fas fa-tablets mr-2"></i>Vitamin</a>
-            
-            
-            
-
           </div>
         </div>
       </li>
 
+      
       <!-- Divider -->
       <hr class="sidebar-divider">
 
