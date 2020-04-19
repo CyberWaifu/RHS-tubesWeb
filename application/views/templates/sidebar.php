@@ -50,9 +50,9 @@
       <hr class="sidebar-divider">
 
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('index.php/kategori/minuman') ?>">
-          <i class="fas fa-wine-bottle"></i>
-          <span>Minuman</span></a>
+        <a class="nav-link" href="<?php echo base_url('index.php/admin/daftar/tampil_praktik') ?>">
+          <i class="fas fa-list"></i>
+          <span>Jadwal Praktik</span></a>
       </li>
 
       <!-- Divider -->

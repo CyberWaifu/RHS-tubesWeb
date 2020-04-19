@@ -18,6 +18,7 @@ class Data_barang extends CI_Controller{
     public function index()
     {
         $data['barang'] = $this->model_barang->tampil_data()->result();
+        $data['length'] = $this->model_barang->count_rows()->num_rows();
         $this->load->view('templates-admin/header');
         $this->load->view('templates-admin/sidebar');
         $this->load->view('admin/data_barang',$data);

@@ -38,6 +38,12 @@
           <span>Invoices</span></a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('index.php/admin/daftar/index') ?>">
+          <i class="fas fa-list"></i>
+          <span>Tambah Jadwal Praktik</span></a>
+      </li>
+
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">

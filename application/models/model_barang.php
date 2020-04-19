@@ -42,4 +42,8 @@ class Model_barang extends CI_Model{
             return false;
         }
     }
+
+    public function count_rows(){
+        return $this->db->get('tb_barang');
+    }
 }
