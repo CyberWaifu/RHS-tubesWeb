@@ -22,9 +22,7 @@ class Dashboard extends CI_controller{
         $this->load->view('templates/footer');
     }
     
-    public function index(){   
-        $this->load->view('pages/landingpages');
-    }
+   
 
     public function tambah_ke_keranjang($id){
         $barang = $this->model_barang->find($id);
