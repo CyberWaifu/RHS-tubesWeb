@@ -4,7 +4,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -29,11 +29,11 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
           <i class="fas fa-briefcase-medical"></i>
           <span>Apotek Online</span>
         </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapse3" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Kategori:</h6>
             <a class="collapse-item" href="<?php echo base_url('index.php/dashboard/semua') ?>">Semua</a>
@@ -43,6 +43,36 @@
             <a class="collapse-item" href="<?php echo base_url('index.php/kategori/vitamin') ?>"><i class="fas fa-tablets mr-2"></i>Vitamin</a>
           </div>
         </div>
+      </li>
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+          <i class="far fa-newspaper"></i>
+          <span>Artikel</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+
+            <a class="collapse-item" href="<?php echo base_url('index.php/artikel/semua') ?>">Semua Artikel</a>
+
+            <a class="collapse-item" href="<?php echo base_url('index.php/artikel/terbaru') ?>"><i class="far fa-newspaper mr-2"></i>Terbaru</a>
+            <h6 class="collapse-header">Kategori:</h6>
+            
+            <a class="collapse-item" href="<?php echo base_url('index.php/artikel/sehat') ?>"> <i class="fas fa-running mr-2"></i>Hidup Sehat</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/artikel/penyakit') ?>"><i class="fas fa-heartbeat mr-2"></i>Penyakit</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/artikel/mental') ?>"><i class="fas fa-child mr-2"></i>Kesehatan Mental </a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/artikel/sex') ?>"><i class="fas fa-heart mr-2"></i>Sex & Relationship </a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/artikel/bayi') ?>"><i class="fas fa-baby-carriage mr-2"></i>Bayi & Menyusui </a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/artikel/parenting') ?>"><i class="fas fa-child mr-2"></i>Parenting </a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/artikel/lainnya') ?>"><i class="fas fa-plus mr-2"></i>Lainnya </a>
+          </div>
+        </div>
+        
       </li>
 
       

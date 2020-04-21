@@ -39,6 +39,12 @@
       </li>
 
       <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('index.php/admin/artikel_admin/edit_page') ?>">
+          <i class="far fa-newspaper"></i>
+          <span>Artikel</span></a>
+      </li>
+
+      <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('index.php/admin/daftar/index') ?>">
           <i class="fas fa-list"></i>
           <span>Tambah Jadwal Praktik</span></a>
@@ -52,7 +58,7 @@
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
-s
+
     </ul>
     <!-- End of Sidebar -->
 

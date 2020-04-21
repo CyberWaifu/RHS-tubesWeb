@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+  .bg {
+  /* The image used */
+  background-image: url("<?php echo base_url('assets/img/header-bg.jpg'); ?>");
 
+  /* Full height */
+  height: 100%;
 
-<body class="bg-gradient-primary">
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<body class="bg">
 
   <div class="container">
 
