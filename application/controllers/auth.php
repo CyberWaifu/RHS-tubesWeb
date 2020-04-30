@@ -5,7 +5,7 @@ class Auth extends CI_Controller{
     public function login(){
 
         $this->form_validation->set_rules('username','Username','required');
-        $this->form_validation->set_rules('password','Psername','required');
+        $this->form_validation->set_rules('password','Password','required');
         if ($this->form_validation->run() == FALSE){
             $this->load->view('templates/header');
             $this->load->view('pages/login');
