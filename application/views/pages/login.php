@@ -14,6 +14,16 @@
   background-size: cover;
 }
 </style>
+<script>
+  function show(){
+    var show = document.getElementById('exampleInputPassword');
+    if(show.type == "text"){
+       show.type = "password";
+    }else{
+      show.type = "text";
+    }
+  }
+</script>
 
 <body class="bg">
 
@@ -40,7 +50,8 @@
                         <?php echo form_error('username','<div class="text-danger small ml-2">','</div>') ?>
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" name="password">
+                      <input type="password" class="form-control form-control-user mb-2" id="exampleInputPassword" placeholder="Password" name="password">
+                      <input type="checkbox" onclick="show()"> Show Password
                       <?php echo form_error('password','<div class="text-danger small ml-2">','</div>') ?>
                     </div>
                     
